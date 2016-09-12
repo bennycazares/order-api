@@ -9,6 +9,9 @@ Rails.application.routes.draw do
     delete "orders/:id" => 'orders#delete'
 
     post "registrations" => 'registrations#create'
+
+    get "me" => 'users#me'
+    delete "me" => 'users#delete'
   end
 
 end
